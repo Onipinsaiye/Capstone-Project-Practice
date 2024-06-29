@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Capstone Project.com</title>
+</head>
+<body>
+    <h1><em><strong>Welcome to Victor Onipinsaiye blog website!</strong></em></h1>
+    <% if(locals.webContent){ %>
+        <ul>
+            <% webContent.forEach((content)=>{ %>
+                <p class="container"><%= content %></p> <br>
+           <% }) %>
+        </ul>
+  <%  }else{ %>
+        <h1><em><strong></strong></em></h1>
+   <% } %>
+    <form action="/" method="post">
+        <button type="submit" name="add" id="add" class="add">Create new blog</button>
+    </form> <br>
+    <footer> &copy; All rights reserved,<%= new Date().getFullYear() %>.</footer>
+    
+</body>
+</html>

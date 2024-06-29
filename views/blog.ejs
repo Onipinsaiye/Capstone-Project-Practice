@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Capstone Project.com</title>
+</head>
+<body>
+    <h1><em><strong> <%= new Date().toLocaleDateString() %> </strong></em></h1>
+    <h1><em><strong> <%= new Date().toLocaleTimeString() %> </strong></em></h1>
+    <h1><em><strong>Write a new blog!</strong></em></h1>
+    <form action="/blog" method="post" autocomplete="off">
+        <br><textarea name="content" id="content" cols="100" rows="10" placeholder="Blog content"></textarea><br><br>
+        <button type="submit" id="btn" class="btn" name="btn">Add blog</button>
+    </form> <br>
+    <footer>&copy; All rights reserved, <%= new Date().getFullYear()%>. </footer>
+</body>
+</html>
